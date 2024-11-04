@@ -4,6 +4,7 @@
  * 6n+5
  * 11n+5
  * 71n+41
+
  */
 
 public class ListPrimeNumbers {
@@ -20,16 +21,12 @@ public class ListPrimeNumbers {
         System.out.println("\n\nPrime Numbers of form 71n+41: ");
         findPrimesOfForm(71, 41);
 
-        System.out.println("\n\nPrime Numbers of form 65n+13: ");
-        findPrimesOfForm(65, 13);
-
-        System.out.println("\n\nPrime Numbers of form 91n+7: ");
-        findPrimesOfForm(91, 7);
     }
 
     public static void findPrimesOfForm(int multiplier, int constant) {
         int count = 0, n = 0;
         while (count < 10) {
+            System.out.print(n + " ");
             int num = (multiplier * n) + constant;
             if (isPrime(num)) {
                 System.out.print(num + " ");
