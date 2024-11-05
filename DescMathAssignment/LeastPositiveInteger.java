@@ -36,13 +36,14 @@ public class LeastPositiveInteger {
         return Math.abs(gcd(firstMultiplier, secondMultiplier, thirdMultiplier));
     }
 
-    public static int gcd(int num1, int num2) {
-        while (num2 != 0) {
-            int remainder = num1 % num2;
-            num1 = num2;
-            num2 = remainder;
+    // let solve this problem using recursion (refer gcd image)
+    public static int gcd(int a, int b) {
+        while (a % b != 0) {
+            int remainder = a % b;
+            a = b;
+            b = remainder;
         }
-        return Math.abs(num1);
+        return Math.abs(b);
     }
 
     public static int gcd(int num1, int num2, int num3) {
