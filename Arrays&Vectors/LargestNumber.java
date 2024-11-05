@@ -16,8 +16,8 @@ public class LargestNumber {
             arr[i] = userInput.nextInt();
         }
 
-        int max = arr[0];
-        for (int i = 1; i < size; i++) {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < size; i++) {
             if (max < arr[i]) {
                 max = arr[i];
             }
