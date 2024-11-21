@@ -4,6 +4,13 @@ public class Rectangle {
     private double length;
     private double breadth;
 
+    // Default Constructor
+    public Rectangle() {
+        this.breadth = 0;
+        this.length = 0;
+    }
+
+    // Parameterized Constructor
     public Rectangle(double length, double breadth) {
         this.breadth = breadth;
         this.length = length;
